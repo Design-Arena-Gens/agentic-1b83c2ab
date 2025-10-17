@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-brand-50: #e9f2ff;
+  --color-brand-100: #c8ddff;
+  --color-brand-200: #a3c5ff;
+  --color-brand-300: #7cabff;
+  --color-brand-400: #558eff;
+  --color-brand-500: #396eff;
+  --color-brand-600: #2b54db;
+  --color-brand-700: #203fab;
+  --color-brand-800: #162b7a;
+  --color-brand-900: #0c184a;
+}
+
+body {
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  background: radial-gradient(circle at top left, #070d1b 0%, #010205 60%);
+  color: #f7faff;
+  min-height: 100vh;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--color-brand-400) 70%, transparent);
+  color: #0a1427;
+}
